@@ -22,6 +22,7 @@ function App() {
   // console.log(formulario,usuarios)
 
   return (
+    <div style={{ marginTop: '15%'}}>
     <Container>
       <Card>
         <div style={{ padding: 20 }}>
@@ -37,6 +38,7 @@ function App() {
               name="name"
               value={formulario.name}
               onChange={handleChange}
+              placeholder='Nombre'
             />
 
             <Input
@@ -44,6 +46,7 @@ function App() {
               name="lastname"
               value={formulario.lastname}
               onChange={handleChange}
+              placeholder='Apellido'
             />
 
             <Input
@@ -51,6 +54,7 @@ function App() {
               name="email"
               value={formulario.email}
               onChange={handleChange}
+              placeholder='Correo'
             />
 
             <Button>Enviar</Button>
@@ -64,6 +68,7 @@ function App() {
         </ul>
       </Card>
     </Container>
+    </div>
   );
 }
 
